@@ -50,9 +50,11 @@ function showGames(){
 	          		game_id = value.game._id;
 	          		game_name = value.game.name;
 	          		game_image = value.game.box.medium;
-	          		game_viewers = value.viewers;
+					game_viewers = value.viewers;
+					game_name = game_name.replace(/'/g, "&#39;");
+					
 	          		
-	          		$("#twitch-widget-gamelist").append("<div class='game_item' name=" + game_name + " id='" + game_id + "'><img src='" + game_image + "'><br><b>" + game_name + "</b><br/><div class='game_status'>" + game_viewers + " viewers</div></div>");
+	          		$("#twitch-widget-gamelist").append("<div class='game_item' name='" + game_name + "' id='" + game_id + "'><img src='" + game_image + "'><br><b>" + game_name + "</b><br/><div class='game_status'>" + game_viewers + " viewers</div></div>");
 	          	
 	          	})
 	
