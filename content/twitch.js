@@ -52,7 +52,7 @@ function showGames(){
 	          		game_image = value.game.box.medium;
 	          		game_viewers = value.viewers;
 	          		
-	          		$("#twitch-widget-gamelist").append("<div class='game_item' name=" + game_name + "` id='" + game_id + "'><img src='" + game_image + "'><br><b>" + game_name + "</b><br/><div class='game_status'>" + game_viewers + " viewers</div></div>");
+	          		$("#twitch-widget-gamelist").append("<div class='game_item' name=" + game_name + " id='" + game_id + "'><img src='" + game_image + "'><br><b>" + game_name + "</b><br/><div class='game_status'>" + game_viewers + " viewers</div></div>");
 	          	
 	          	})
 	
