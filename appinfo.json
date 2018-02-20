@@ -5,7 +5,7 @@
     "icon": "icon.png",
     "main": "index.html",
     "bgImage": "background.png",
-    "id": "com.patrickrorth.twitchtv",
+    "id": "com.marechallima.twitchtv",
     "title": "Twitch",
     "type": "web",
     "version": "0.0.6",
